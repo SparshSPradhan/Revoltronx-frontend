@@ -1,38 +1,108 @@
-.App {
+
+
+/* Styling the search container */
+.search-container {
   text-align: center;
+  margin: 20px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* Styling the input box */
+.search-container input[type="text"] {
+  width: 60%;
+  padding: 12px 20px;
+  margin: 10px 0;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+/* Styling the search button */
+.search-container button {
+  padding: 12px 20px;
+  margin: 10px 5px;
+  background-color: #4CAF50; 
   color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
 }
 
-.App-link {
-  color: #61dafb;
+/* Hover effect for buttons */
+.search-container button:hover {
+  background-color: #45a049;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+/* Styling the filter buttons */
+.filter-buttons {
+  margin-top: 20px;
+}
+
+.filter-buttons button {
+  padding: 10px 15px;
+  margin: 5px;
+  background-color: #2196F3; 
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s ease;
+}
+
+/* Hover effect for filter buttons */
+.filter-buttons button:hover {
+  background-color: #0b7dda;
+}
+
+/* Styling the results container */
+.results-container {
+  margin: 20px auto;
+  width: 80%;
+  text-align: left;
+}
+
+/* Styling the individual result items */
+.results-container h3 {
+  color: #333;
+  font-size: 22px;
+  margin-bottom: 15px;
+}
+
+.results-container div {
+  background-color: #f9f9f9;
+  padding: 15px;
+  margin-bottom: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.results-container a {
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+  text-decoration: none;
+}
+
+.results-container p {
+  color: #555;
+  margin: 8px 0;
+}
+
+/* Small screens adjustments */
+@media screen and (max-width: 600px) {
+  .search-container input[type="text"] {
+    width: 100%;
   }
-  to {
-    transform: rotate(360deg);
+
+  .results-container {
+    width: 100%;
+  }
+
+  .filter-buttons button {
+    width: 100%;
+    padding: 12px 0;
   }
 }
