@@ -9,7 +9,7 @@ const SearchApp = () => {
 
 const fetchData = async () => {
   try {
-    const response = await axios.get(`http://localhost:3000/search`, {
+    const response = await axios.get(`https://revoltronx-backend.vercel.app/search`, {
       params: {
         q: query,
         filter: filter,  // Send filter to the backend
