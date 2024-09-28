@@ -71,8 +71,8 @@ const fetchData = async () => {
           <div>
             <h3>Article Results</h3>
             {results.articles.map((article) => (
-              <div key={article.url}>
-                <a href={article.url} target="_blank" rel="noreferrer">{article.title}</a>
+              <div key={article.link}>
+                <a href={article.link} target="_blank" rel="noreferrer">{article.title}</a>
                 <p>{article.snippet}</p>
               </div>
             ))}
@@ -83,8 +83,8 @@ const fetchData = async () => {
           <div>
             <h3>Academic Papers</h3>
             {results.papers.map((paper) => (
-              <div key={paper.url}>
-                <a href={paper.url} target="_blank" rel="noreferrer">{paper.title}</a>
+              <div key={paper.link}>
+                <a href={paper.link} target="_blank" rel="noreferrer">{paper.title}</a>
                 <p>{paper.snippet}</p>
               </div>
             ))}
